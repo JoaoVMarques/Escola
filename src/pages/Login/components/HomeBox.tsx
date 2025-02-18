@@ -1,6 +1,6 @@
 import './style.css';
 
-function Home() {
+function LoginContainer() {
 
   return (
     <>
@@ -11,4 +11,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default LoginContainer;
