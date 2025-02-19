@@ -1,11 +1,14 @@
 import { Col, Container, Row } from "react-bootstrap";
+import LoginFormContainer from "./LoginFormContainer";
 
 function LoginContainer() {
 
   return (
     <Container>
       <Row className="justify-content-md-center">
-        <Col> <h2>Container</h2> </Col>
+        <Col>
+          <LoginFormContainer />
+        </Col>
       </Row>
     </Container>
   );
