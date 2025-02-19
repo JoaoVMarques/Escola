@@ -16,12 +16,12 @@ export default [
   },
   {
     rules: {
+      "linebreak-style": 0,
       'react/react-in-jsx-scope': 'off',
       'no-console': 'off',
       'import/extensions': 'off',
       'import/no-unresolved': 'off',
       'consistent-return': 'off',
-      'linebreak-style': ['error', 'windows'],
       'object-curly-spacing': ['error', 'always'],
       'keyword-spacing': ['error', {
         overrides: {

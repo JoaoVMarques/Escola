@@ -1,12 +1,9 @@
-import './style.css';
+import LoginContainer from './components/LoginContainer';
 
 function Home() {
-
   return (
     <>
-      <h1>
-        escola
-      </h1>
+      <LoginContainer />
     </>
   );
 }
