@@ -19,7 +19,8 @@ class Server:
     self.app.run()
 
   def routes(self) -> None:
-    self.route = Routes.Test_Routes(self.app)
+    self.route = Routes.Tests(self.app)
+    self.route = Routes.Acccount(self.app)
 
 
 if __name__ == '__main__':

@@ -7,5 +7,5 @@ class Test_Routes:
 
   def routes(self):
     @self.app.route('/test', methods=['GET'])
-    def hello_world():
+    async def hello_world():
       return jsonify({ "message": "Hello world" })
