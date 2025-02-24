@@ -1,4 +1,4 @@
-import { Col, Container, Form, Row } from "react-bootstrap";
+import { Col, Container, Form, Row } from 'react-bootstrap';
 
 function LoginFormContainer() {
 
@@ -7,8 +7,8 @@ function LoginFormContainer() {
       <Container>
         <Row>
           <Col md={6}>
-            <h2 className='text-center'>Entrar</h2>
-            <h6 className='text-center'>acesse com seu e-mail e senha</h6>
+            <h2 className="text-center">Entrar</h2>
+            <h6 className="text-center">acesse com seu e-mail e senha</h6>
           </Col>
         </Row>
         <Row className="mb-3">

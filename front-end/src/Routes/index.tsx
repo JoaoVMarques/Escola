@@ -1,10 +1,10 @@
 import { Routes, Route, Navigate } from 'react-router-dom';
-import LoginPage from '../Login'
+import LoginPage from '../pages/Login';
 
 function Router() {
   return (
     <Routes>
-      <Route path='/login' element={ <LoginPage /> } />
+      <Route path="/login" element={ <LoginPage /> } />
 
       <Route path="*" element={<Navigate to="/login" replace />} />
     </Routes>
