@@ -1,6 +1,6 @@
 import LoginContainer from './components/LoginContainer';
 
-function Home() {
+function LoginPage() {
   return (
     <>
       <LoginContainer />
@@ -8,4 +8,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default LoginPage;
