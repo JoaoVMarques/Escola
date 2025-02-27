@@ -1,5 +1,6 @@
 from school.services.accounts_service import Accounts_service
 from flask import jsonify, request, json
+from flask_cors import cross_origin
 
 class Accounts_route:
   def __init__(self, app) -> None:

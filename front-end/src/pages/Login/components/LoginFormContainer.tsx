@@ -11,8 +11,8 @@ function LoginFormContainer() {
   });
 
   const loginAccount = async (formAccount: accountLoginInterface) => {
-    const a = await verifyAccountForLogin(formAccount);
-    console.log(a);
+    const response = await verifyAccountForLogin(formAccount);
+    console.log(response);
   };
 
   return (
