@@ -10,8 +10,9 @@ function LoginFormContainer() {
     password: yup.string().required(),
   });
 
-  const loginAccount = (formAccount: accountLoginInterface) => {
-    verifyAccountForLogin(formAccount);
+  const loginAccount = async (formAccount: accountLoginInterface) => {
+    const a = await verifyAccountForLogin(formAccount);
+    console.log(a);
   };
 
   return (

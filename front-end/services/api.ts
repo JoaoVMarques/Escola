@@ -1,6 +1,7 @@
 import axios from 'axios';
 
-const databaseURL = import.meta.env.DATABASE_URL;
+const databaseURL = import.meta.env.VITE_DATABASE_URL;
+
 
 const api = axios.create({
   baseURL: databaseURL
