@@ -2,10 +2,12 @@ from school.routes.index import Routes
 from school.config import Config
 from school.extensions import mongo
 from flask import Flask
+from flask_cors import CORS
 
 class Server:
   def __init__(self) -> None:
     self.app = Flask('__name__')
+    CORS(self.app)
     self.routes()
   
   def config_dataBase(self) -> None:
