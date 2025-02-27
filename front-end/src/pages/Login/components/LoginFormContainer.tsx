@@ -1,5 +1,7 @@
 import { Formik } from 'formik';
 import { Col, Container, Form, Row } from 'react-bootstrap';
+import accountLoginInterface from '../../../../services/interfaces/accountInterface';
+import { verifyAccountForLogin } from '../../../../services/accountService';
 import * as yup from 'yup';
 
 function LoginFormContainer() {
@@ -8,10 +10,14 @@ function LoginFormContainer() {
     password: yup.string().required(),
   });
 
+  const loginAccount = (formAccount: accountLoginInterface) => {
+    verifyAccountForLogin(formAccount);
+  };
+
   return (
     <Formik
       validationSchema={schema}
-      onSubmit={console.log}
+      onSubmit={(values) => loginAccount(values)}
       initialValues={{
         email: '',
         password: '',
