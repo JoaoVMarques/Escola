@@ -26,15 +26,15 @@ function LoginFormContainer() {
     >
       {({ handleSubmit, handleChange, values }) => (
         <Form className="mt-5" onSubmit={handleSubmit}>
-          <Container>
+          <Container className="login-container p-3 rounded">
             <Row>
-              <Col md={6}>
+              <Col>
                 <h2 className="text-center">Entrar</h2>
                 <h6 className="text-center">acesse com seu e-mail e senha</h6>
               </Col>
             </Row>
             <Row className="mb-3">
-              <Col md={6}>
+              <Col>
                 <Form.Group>
                   <Form.Control
                     id="email"
@@ -47,7 +47,7 @@ function LoginFormContainer() {
               </Col>
             </Row>
             <Row className="mb-3">
-              <Col md={6}>
+              <Col>
                 <Form.Group>
                   <Form.Control
                     id="password"
@@ -60,7 +60,7 @@ function LoginFormContainer() {
               </Col>
             </Row>
             <Row>
-              <Col md={6}>
+              <Col>
                 <button type="submit" className="btn btn-primary w-100">Entrar</button>
               </Col>
             </Row>
