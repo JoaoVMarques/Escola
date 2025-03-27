@@ -1,5 +1,5 @@
-import CoursesSection from './components/CoursesSection';
-import LoginContainer from './components/LoginContainer';
+import CoursesSection from './components/Sections/CoursesSection';
+import LoginContainer from './components/Sections/LoginSection';
 
 function LoginPage() {
   return (

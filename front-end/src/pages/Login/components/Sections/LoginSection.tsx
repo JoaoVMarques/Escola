@@ -1,8 +1,8 @@
 import { Col, Container, Row } from 'react-bootstrap';
-import LoginFormContainer from './LoginFormContainer';
-import './style.css';
+import LoginFormContainer from '../LoginFormContainer';
+import '../../style.css';
 
-function LoginContainer() {
+function LoginSection() {
 
   return (
     <Container>
@@ -15,4 +15,4 @@ function LoginContainer() {
   );
 }
 
-export default LoginContainer;
+export default LoginSection;
