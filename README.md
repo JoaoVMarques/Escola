@@ -15,8 +15,8 @@ Treinar meus limites como fullstack e adiciona-lo ao meu portifólio
   - Entre na pasta ```cd escola```
   
   #### 2 - Instalar as dependencias
-  - Para instalar as depedencias automaticamente via script use o ```./script-installer.ps1```
-  
+  - Para instalar as depedencias automaticamente via script use: ```./script-installer.ps1```
+
   <details>
     <summary>Instalação Manual</summary>
     
@@ -31,7 +31,7 @@ Treinar meus limites como fullstack e adiciona-lo ao meu portifólio
   </details>
 
   #### 3 - Inicie o projeto
-  - Para iniciar o projeto ```npm run dev```
+  - Para iniciar o back-end e front-end automaticamente via script use: ```./script.ps1```
 
 </details>
 
