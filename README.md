@@ -15,7 +15,20 @@ Treinar meus limites como fullstack e adiciona-lo ao meu portifólio
   - Entre na pasta ```cd escola```
   
   #### 2 - Instalar as dependencias
-  - Para instalar as dependencias ```npm install```
+  - Para instalar as depedencias automaticamente via script use o ```./script-installer.ps1```
+  
+  <details>
+    <summary>Instalação Manual</summary>
+    
+    Front-end
+    - Entre na pasta ```cd front-end```
+    - Para instalar as dependencias ```npm install```
+
+    Back-end
+    - Entre na pasta ```cd back-end```
+    - Caso não tenha criado o ambiente virtual ainda use ```py -3 -m venv .venv```
+    - Para instalar as dependencias ```py -m pip install -r ./requirements.txt```
+  </details>
 
   #### 3 - Inicie o projeto
   - Para iniciar o projeto ```npm run dev```
