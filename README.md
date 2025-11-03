@@ -30,7 +30,11 @@ Treinar meus limites como fullstack e adiciona-lo ao meu portifólio
     - Para instalar as dependencias ```py -m pip install -r ./requirements.txt```
   </details>
 
-  #### 3 - Inicie o projeto
+  #### 3 - Configurar o projeto
+  - Entrar na pasta do back-end ```cd back-end```
+  - Configurar a pasta ´.env-example´ corretamente (O passo a passo vai estar dentro da pasta)
+
+  #### 4 - Inicie o projeto
   - Para iniciar o back-end e front-end automaticamente via script use: ```./script.ps1```
 
 </details>
