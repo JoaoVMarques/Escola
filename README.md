@@ -33,6 +33,7 @@ Treinar meus limites como fullstack e adiciona-lo ao meu portifólio
   #### 3 - Configurar o projeto
   - Entrar na pasta do back-end ```cd back-end```
   - Configurar a pasta ´.env-example´ corretamente (O passo a passo vai estar dentro da pasta)
+  - Repita os mesmos passos com o ```cd front-end```
 
   #### 4 - Inicie o projeto
   - Para iniciar o back-end e front-end automaticamente via script use: ```./script.ps1```
