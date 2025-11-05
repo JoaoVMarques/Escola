@@ -1,6 +1,6 @@
 from school.routes.index import Routes
 from school.config import Config
-from school.extensions import mongo
+from school.extensions import mongo, jwt
 from flask import Flask
 from flask_cors import CORS
 
@@ -11,9 +11,11 @@ class Server:
     self.routes()
   
   def config_dataBase(self) -> None:
-    self.app.config['MONGO_DBNAME'] = 'school'
-    self.app.config.from_object(Config())
-    mongo.init_app(self.app)
+    app = self.app
+    app.config['MONGO_DBNAME'] = 'school'
+    app.config.from_object(Config())
+    mongo.init_app(app)
+    jwt.init_app(app)
 
   def start(self) -> None:
     print('Servidor iniciado com sucesso!')

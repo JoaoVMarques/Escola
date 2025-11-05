@@ -6,3 +6,4 @@ Flask-PyMongo===2.3.0
 Flake8==6.0.0
 python-dotenv==1.0.0
 flask-cors==5.0.1
+flask-jwt-extended==4.7.1
