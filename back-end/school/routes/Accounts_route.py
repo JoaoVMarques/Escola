@@ -13,4 +13,4 @@ class Accounts_route:
       data = request.json
       service = Accounts_service(data)
       response = await service.login_account()
-      return jsonify({ "message": response['message']}), response['statusCode']
+      return jsonify(response['content']), response['statusCode']

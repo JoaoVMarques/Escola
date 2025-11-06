@@ -1,4 +1,5 @@
 from flask import request, Response, json
+from flask_jwt_extended import create_access_token, create_refresh_token
 from school.models.account_models import Accounts_model
 
 class Accounts_service:
@@ -6,10 +7,23 @@ class Accounts_service:
     self.account = account
 
   async def login_account(self) -> None:
-    model = Accounts_model(self.account)
-    existing_account = await model.findByEmail(self.account['email'])
+    account = self.account
+    model = Accounts_model(account)
+    existing_account = await model.findByEmail(account['email'])
 
-    if existing_account and existing_account['password'] == self.account['password']:
-      return { "message": "acesso autorizado.", "statusCode": 200 }
+    if existing_account and existing_account['password'] == account['password']:
+      acess_token = create_access_token(identity=account['password'])
+      refresh_token = create_refresh_token(identity=account['password'])
+      
+      return {
+        "content": {
+          "message": "acesso autorizado.",
+          "tokens": {
+            "acess": acess_token,
+            "refresh": refresh_token
+          },
+        },
+        "statusCode": 200
+      }
     else:
       return { "message": "email ou senha incorreta", "statusCode": 401 }

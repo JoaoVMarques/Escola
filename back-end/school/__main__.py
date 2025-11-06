@@ -12,8 +12,7 @@ class Server:
   
   def config_dataBase(self) -> None:
     app = self.app
-    app.config['MONGO_DBNAME'] = 'school'
-    app.config.from_object(Config())
+    app.config.from_object(Config)
     mongo.init_app(app)
     jwt.init_app(app)
 
