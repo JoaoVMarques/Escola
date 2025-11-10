@@ -12,7 +12,8 @@ function LoginFormContainer() {
 
   const loginAccount = async (formAccount: accountLoginInterface) => {
     const response = await verifyAccountForLogin(formAccount);
-    console.log(response);
+
+    localStorage.setItem('acess-token', JSON.stringify(response.tokens.acess));
   };
 
   return (
